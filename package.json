@@ -1,10 +1,10 @@
 {
-  "name": "itunes",
+  "name": "phoenixchildrens",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "engines": {
-    "node": "6.5.0"
+    "node": "9.11.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,16 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlaiseRoberts/proxy-server.git"
+    "url": "git+https://github.com/kenziebottoms/phoenixchildrens-proxy-server.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BlaiseRoberts/proxy-server/issues"
+    "url": "https://github.com/kenziebottoms/phoenixchildrens-proxy-server/issues"
   },
-  "homepage": "https://github.com/BlaiseRoberts/proxy-server#readme",
+  "homepage": "https://github.com/kenziebottoms/phoenixchildrens-proxy-server#readme",
   "dependencies": {
     "express": "^4.14.1",
     "request": "^2.79.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
