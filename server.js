@@ -16,7 +16,8 @@ app.use(function(req, res, next) {
 app.get('/api/phoenixchildrens/*', (req, res) => {
   let apiCall = req.url.slice('/api/phoenixchildrens/'.length)
   let apiReq = `https://secured.phoenixchildrens.com/SharedAssets/UCWaitTimes/${apiCall}`;
-  request.get(apiReq, (err, _, body) => {
+  request.get(apiReq, (err, response, body) => {
+    console.log(apiReq+": "+response.statusCode);
     res.send(body)
   });
 });
