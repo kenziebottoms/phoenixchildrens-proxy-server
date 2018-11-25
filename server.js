@@ -13,10 +13,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-
-app.get('/api/itunes/*', (req, res) => {
-  let apiCall = req.url.slice('/api/itunes/'.length)
-  let apiReq = `https://itunes.apple.com/search${apiCall}`
+app.get('/api/phoenixchildrens/*', (req, res) => {
+  let apiCall = req.url.slice('/api/phoenixchildrens/'.length)
+  let apiReq = `https://secured.phoenixchildrens.com/SharedAssets/UCWaitTimes/${apiCall}`;
   request.get(apiReq, (err, _, body) => {
     res.send(body)
   });
